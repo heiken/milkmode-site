@@ -6,6 +6,26 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://milkmode.app/blog/</loc>
+    <lastmod>2026-03-07</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://milkmode.app/blog/milkmode-vs-huckleberry</loc>
+    <lastmod>2026-03-07</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://milkmode.app/blog/why-breastfeeding-apps-do-too-much</loc>
+    <lastmod>2026-03-07</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://milkmode.app/blog/how-to-track-breastfeeding</loc>
+    <lastmod>2026-03-07</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://milkmode.app/support.html</loc>
     <lastmod>2026-03-07</lastmod>
     <priority>0.6</priority>
