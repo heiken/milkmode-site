@@ -27,7 +27,7 @@
         "description": "A practical guide to breastfeeding tracking. What to track, what to skip, and how to make it effortless.",
         "author": { "@type": "Organization", "name": "MilkMode" },
         "publisher": { "@type": "Organization", "name": "MilkMode" },
-        "datePublished": "2026-03-07",
+        "datePublished": "2026-02-14",
         "url": "https://milkmode.app/blog/how-to-track-breastfeeding"
     }
     </script>
@@ -41,84 +41,23 @@
             min-height: 100vh;
             color: #333;
         }
-        nav {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px 24px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .nav-brand {
-            font-size: 1.4em;
-            font-weight: 700;
-            background: linear-gradient(90deg, #ff6b9d, #a855f7);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            text-decoration: none;
-        }
+        nav { max-width: 900px; margin: 0 auto; padding: 20px 24px; display: flex; justify-content: space-between; align-items: center; }
+        .nav-brand { font-size: 1.4em; font-weight: 700; background: linear-gradient(90deg, #ff6b9d, #a855f7); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; text-decoration: none; }
         .nav-links { display: flex; gap: 24px; }
-        .nav-links a {
-            color: #666;
-            text-decoration: none;
-            font-size: 0.95em;
-            font-weight: 500;
-            transition: color 0.2s;
-        }
+        .nav-links a { color: #666; text-decoration: none; font-size: 0.95em; font-weight: 500; transition: color 0.2s; }
         .nav-links a:hover { color: #a855f7; }
 
-        .article {
-            max-width: 680px;
-            margin: 0 auto;
-            padding: 40px 24px 60px;
-        }
-        .article-tag {
-            display: inline-block;
-            font-size: 0.75em;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            color: #a855f7;
-            background: #f5f0ff;
-            padding: 4px 10px;
-            border-radius: 6px;
-            margin-bottom: 16px;
-        }
-        .article h1 {
-            font-size: 2.2em;
-            line-height: 1.2;
-            color: #222;
-            margin-bottom: 12px;
-        }
-        .article-meta {
-            color: #aaa;
-            font-size: 0.9em;
-            margin-bottom: 32px;
-        }
-        .article-body h2 {
-            font-size: 1.4em;
-            color: #222;
-            margin: 40px 0 12px;
-        }
-        .article-body h3 {
-            font-size: 1.15em;
-            color: #333;
-            margin: 28px 0 8px;
-        }
-        .article-body p {
-            color: #444;
-            font-size: 1.05em;
-            line-height: 1.8;
-            margin-bottom: 16px;
-        }
+        .article { max-width: 680px; margin: 0 auto; padding: 40px 24px 60px; }
+        .article-tag { display: inline-block; font-size: 0.75em; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: #a855f7; background: #f5f0ff; padding: 4px 10px; border-radius: 6px; margin-bottom: 16px; }
+        .article h1 { font-size: 2.2em; line-height: 1.2; color: #222; margin-bottom: 12px; }
+        .article-meta { color: #aaa; font-size: 0.9em; margin-bottom: 32px; }
+        .article-body h2 { font-size: 1.4em; color: #222; margin: 40px 0 12px; }
+        .article-body h3 { font-size: 1.15em; color: #333; margin: 28px 0 8px; }
+        .article-body p { color: #444; font-size: 1.05em; line-height: 1.8; margin-bottom: 16px; }
+        .article-body a { color: #a855f7; text-decoration: none; font-weight: 500; }
+        .article-body a:hover { text-decoration: underline; }
         .article-body strong { color: #333; }
-        .article-body ul, .article-body ol {
-            margin: 0 0 16px 24px;
-            color: #444;
-            font-size: 1.05em;
-            line-height: 1.8;
-        }
+        .article-body ul, .article-body ol { margin: 0 0 16px 24px; color: #444; font-size: 1.05em; line-height: 1.8; }
         .article-body li { margin-bottom: 4px; }
 
         .tip-box {
@@ -127,66 +66,117 @@
             padding: 20px 24px;
             margin: 24px 0;
         }
-        .tip-box p {
-            color: #555;
-            margin-bottom: 0;
+        .tip-box p { color: #555; margin-bottom: 0; }
+        .tip-box strong { color: #a855f7; }
+
+        /* Visual: What to track grid */
+        .track-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 14px;
+            margin: 28px 0;
         }
-        .tip-box strong {
+        .track-card {
+            border-radius: 14px;
+            padding: 20px;
+            text-align: center;
+        }
+        .track-card-yes {
+            background: #f5f0ff;
+            border: 1px solid #d8b4fe;
+        }
+        .track-card-no {
+            background: #fafafa;
+            border: 1px solid #e5e5e5;
+        }
+        .track-card .tc-icon { font-size: 1.6em; margin-bottom: 6px; }
+        .track-card .tc-title { font-weight: 600; font-size: 0.9em; margin-bottom: 2px; }
+        .track-card-yes .tc-title { color: #a855f7; }
+        .track-card-no .tc-title { color: #999; }
+        .track-card .tc-desc { font-size: 0.8em; color: #888; line-height: 1.4; }
+
+        /* Visual: Method cards */
+        .method-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 14px;
+            margin: 28px 0;
+        }
+        .method-card {
+            background: white;
+            border: 1px solid #e8d5f5;
+            border-radius: 14px;
+            padding: 20px 16px;
+            text-align: center;
+        }
+        .method-card .mc-icon { font-size: 2em; margin-bottom: 8px; }
+        .method-card .mc-title { font-weight: 600; color: #333; font-size: 0.9em; margin-bottom: 4px; }
+        .method-card .mc-desc { font-size: 0.8em; color: #888; line-height: 1.4; }
+        .method-card .mc-badge {
+            display: inline-block;
+            margin-top: 8px;
+            font-size: 0.7em;
+            font-weight: 600;
             color: #a855f7;
+            background: #f5f0ff;
+            padding: 2px 8px;
+            border-radius: 4px;
         }
 
-        .article-cta {
-            background: linear-gradient(135deg, #a855f7, #ff6b9d);
-            border-radius: 16px;
-            padding: 32px;
-            text-align: center;
-            margin-top: 40px;
-            color: white;
+        /* Visual: Timeline */
+        .timeline {
+            position: relative;
+            margin: 28px 0;
+            padding-left: 28px;
         }
-        .article-cta h3 {
-            font-size: 1.3em;
-            margin-bottom: 8px;
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 8px;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: linear-gradient(to bottom, #a855f7, #ff6b9d);
+            border-radius: 3px;
         }
-        .article-cta p {
-            opacity: 0.92;
-            margin-bottom: 16px;
-            font-size: 0.95em;
+        .timeline-item {
+            position: relative;
+            padding: 12px 0 12px 20px;
         }
-        .article-cta a {
-            display: inline-block;
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -24px;
+            top: 18px;
+            width: 12px;
+            height: 12px;
             background: white;
-            color: #a855f7;
-            text-decoration: none;
-            padding: 12px 28px;
-            border-radius: 50px;
-            font-weight: 600;
-            transition: transform 0.2s;
+            border: 3px solid #a855f7;
+            border-radius: 50%;
         }
+        .timeline-item .tl-label {
+            font-weight: 600;
+            color: #a855f7;
+            font-size: 0.85em;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+        }
+        .timeline-item .tl-text {
+            color: #555;
+            font-size: 0.95em;
+            line-height: 1.6;
+        }
+
+        .article-cta { background: linear-gradient(135deg, #a855f7, #ff6b9d); border-radius: 16px; padding: 32px; text-align: center; margin-top: 40px; color: white; }
+        .article-cta h3 { font-size: 1.3em; margin-bottom: 8px; }
+        .article-cta p { opacity: 0.92; margin-bottom: 16px; font-size: 0.95em; }
+        .article-cta a { display: inline-block; background: white; color: #a855f7; text-decoration: none; padding: 12px 28px; border-radius: 50px; font-weight: 600; transition: transform 0.2s; }
         .article-cta a:hover { transform: translateY(-1px); }
 
-        .back-link {
-            display: inline-block;
-            margin-bottom: 24px;
-            color: #a855f7;
-            text-decoration: none;
-            font-size: 0.9em;
-            font-weight: 500;
-        }
+        .back-link { display: inline-block; margin-bottom: 24px; color: #a855f7; text-decoration: none; font-size: 0.9em; font-weight: 500; }
         .back-link:hover { text-decoration: underline; }
 
-        .footer {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 40px 24px;
-            border-top: 1px solid #e0d0e8;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 16px;
-            font-size: 14px;
-            color: #888;
-        }
+        .footer { max-width: 900px; margin: 0 auto; padding: 40px 24px; border-top: 1px solid #e0d0e8; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; font-size: 14px; color: #888; }
         .footer a { color: #a855f7; text-decoration: none; }
         .footer a:hover { text-decoration: underline; }
         .footer-links { display: flex; gap: 24px; }
@@ -195,6 +185,8 @@
             .article h1 { font-size: 1.7em; }
             .footer { flex-direction: column; text-align: center; }
             .nav-links { gap: 16px; }
+            .track-grid { grid-template-columns: 1fr; }
+            .method-grid { grid-template-columns: 1fr; }
         }
     </style>
 </head>
@@ -216,7 +208,7 @@
         <a href="/blog/" class="back-link">&larr; Back to Blog</a>
         <span class="article-tag">Guide</span>
         <h1>How to Track Breastfeeding Without Losing Your Mind</h1>
-        <div class="article-meta">March 2026 &middot; 6 min read</div>
+        <div class="article-meta">February 14, 2026 &middot; 6 min read</div>
 
         <div class="article-body">
             <p>Your pediatrician says to track feeds. Your lactation consultant says to write down which side you started on. Your mother-in-law says she never tracked anything and you all turned out fine.</p>
@@ -231,9 +223,24 @@
 
             <p>The short answer: it depends on where you are in your breastfeeding journey.</p>
 
-            <p><strong>In the early weeks, tracking is genuinely helpful.</strong> Your pediatrician will want to know how often your baby is eating. If your baby isn't gaining weight, a feeding log helps identify patterns. And when you're so sleep-deprived that you can't remember what day it is, a timer that remembers which side you fed on last is a lifesaver.</p>
-
-            <p><strong>After a few months, you can probably relax.</strong> Once breastfeeding is established and baby is gaining weight well, many parents stop tracking entirely. That's fine. The data is most useful in those early, chaotic weeks when everything is new.</p>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="tl-label">First 2 weeks</div>
+                    <div class="tl-text">Track everything. Your pediatrician needs this data and you're too tired to remember any of it.</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="tl-label">Weeks 2-8</div>
+                    <div class="tl-text">Still useful. Helps spot patterns, answer doctor's questions, and remember which side you started on.</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="tl-label">2-4 months</div>
+                    <div class="tl-text">Optional but nice. You're getting the hang of it. Track if it helps, skip if it doesn't.</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="tl-label">4+ months</div>
+                    <div class="tl-text">Up to you. Most parents either stop or keep it light. You know your baby by now.</div>
+                </div>
+            </div>
 
             <div class="tip-box">
                 <p><strong>Quick rule of thumb:</strong> If your pediatrician is asking about feeding frequency, track. If everything is going well and nobody is worried, track only if it's helpful to you. There's no medal for the most detailed breastfeeding spreadsheet.</p>
@@ -241,46 +248,64 @@
 
             <h2>What's actually worth tracking</h2>
 
-            <p>You don't need to log every possible data point. Here's what's genuinely useful:</p>
+            <p>You don't need to log every possible data point. Here's what's genuinely useful vs. what you can skip:</p>
 
-            <h3>1. When the feed started</h3>
+            <div class="track-grid">
+                <div class="track-card track-card-yes">
+                    <div class="tc-icon">&#9201;</div>
+                    <div class="tc-title">When it started</div>
+                    <div class="tc-desc">Spot patterns and answer the pediatrician</div>
+                </div>
+                <div class="track-card track-card-yes">
+                    <div class="tc-icon">&#8987;</div>
+                    <div class="tc-title">How long</div>
+                    <div class="tc-desc">Full feed vs. snacking</div>
+                </div>
+                <div class="track-card track-card-yes">
+                    <div class="tc-icon">&#8596;</div>
+                    <div class="tc-title">Which side</div>
+                    <div class="tc-desc">You will not remember at 3am</div>
+                </div>
+                <div class="track-card track-card-yes">
+                    <div class="tc-icon">&#128203;</div>
+                    <div class="tc-title">Feed history</div>
+                    <div class="tc-desc">Simple list, not a PhD thesis</div>
+                </div>
+                <div class="track-card track-card-no">
+                    <div class="tc-icon">&#128169;</div>
+                    <div class="tc-title">Diapers</div>
+                    <div class="tc-desc">Not in your feeding app</div>
+                </div>
+                <div class="track-card track-card-no">
+                    <div class="tc-icon">&#128164;</div>
+                    <div class="tc-title">Sleep windows</div>
+                    <div class="tc-desc">Separate concern</div>
+                </div>
+                <div class="track-card track-card-no">
+                    <div class="tc-icon">&#128170;</div>
+                    <div class="tc-title">Tummy time</div>
+                    <div class="tc-desc">Doesn't belong here</div>
+                </div>
+                <div class="track-card track-card-no">
+                    <div class="tc-icon">&#128200;</div>
+                    <div class="tc-title">Growth charts</div>
+                    <div class="tc-desc">Your pediatrician has these</div>
+                </div>
+            </div>
 
-            <p>This helps you spot patterns and answer the question you'll hear at every checkup: "How often is baby eating?" It also helps you notice if it's been longer than usual since the last feed, which matters in the early weeks.</p>
+            <h3>Which side you started on</h3>
 
-            <h3>2. How long the feed lasted</h3>
-
-            <p>Duration helps you understand whether baby is getting full feeds or just snacking. Short, frequent feeds aren't necessarily a problem, but your pediatrician or lactation consultant might want to know.</p>
-
-            <h3>3. Which side you started on</h3>
-
-            <p>This is the one thing every breastfeeding parent forgets. "Wait, which side did I start on last time?" At 3am, after your fourth wake-up, you genuinely will not remember. A tracker that logs this automatically is worth its weight in gold.</p>
+            <p>This deserves extra attention because it's the one thing every breastfeeding parent forgets. "Wait, which side did I start on last time?" At 3am, after your fourth wake-up, you genuinely will not remember. A tracker that logs this automatically is worth its weight in gold.</p>
 
             <p>Alternating sides helps ensure even milk production and prevents one side from getting engorged. It sounds simple but it's shockingly easy to lose track of.</p>
 
-            <h3>4. A simple feed history</h3>
-
-            <p>Not a complex chart. Not a detailed graph with seven axes. Just a list of recent feeds so you can glance back and see when the last one was and how long it went. That's the data your pediatrician actually wants when they ask "how's feeding going?"</p>
-
             <h2>What's not worth tracking (in a breastfeeding app)</h2>
 
-            <p>This is where things get controversial. A lot of baby apps will try to get you to track all of the following inside the same app where you log feeds:</p>
-
-            <ul>
-                <li>Diapers (wet and dirty, separately)</li>
-                <li>Sleep windows</li>
-                <li>Tummy time</li>
-                <li>Baby's mood</li>
-                <li>Your mood</li>
-                <li>Pumping sessions</li>
-                <li>Bottle feeds</li>
-                <li>Solids introduction</li>
-                <li>Growth and weight</li>
-                <li>Milestones</li>
-            </ul>
+            <p>This is where things get controversial. A lot of baby apps will try to get you to track diapers, sleep, tummy time, your mood, pumping, bottle feeds, solids, growth, and milestones all inside the same app where you log feeds.</p>
 
             <p>Some of this data is useful in specific situations. If your baby has weight gain concerns, diaper counts matter. If you're pumping, a pumping log makes sense.</p>
 
-            <p>But here's the thing: it doesn't all need to live in the same app. And cramming everything into one place usually makes the one thing you do 8-12 times a day (logging a breastfeed) harder than it needs to be.</p>
+            <p>But here's the thing: it doesn't all need to live in the same app. And cramming everything into one place usually makes the one thing you do 8-12 times a day (logging a breastfeed) harder than it needs to be. We wrote more about this in <a href="/blog/why-breastfeeding-apps-do-too-much">Why Most Breastfeeding Apps Do Too Much</a>.</p>
 
             <div class="tip-box">
                 <p><strong>The 3am test:</strong> Can you open the app, start a timer, and go back to feeding your baby in under 3 seconds? If the answer is no, the app has too much stuff in the way.</p>
@@ -288,15 +313,36 @@
 
             <h2>How to make tracking effortless</h2>
 
-            <p>The best tracking system is the one you actually use. Here's how to make it painless:</p>
+            <p>The best tracking system is the one you actually use. Here are three ways to make it painless, from good to best:</p>
+
+            <div class="method-grid">
+                <div class="method-card">
+                    <div class="mc-icon">&#128241;</div>
+                    <div class="mc-title">Open the app</div>
+                    <div class="mc-desc">Find the app, open it, tap start</div>
+                    <div class="mc-badge">Good</div>
+                </div>
+                <div class="method-card">
+                    <div class="mc-icon">&#128274;</div>
+                    <div class="mc-title">Lock Screen</div>
+                    <div class="mc-desc">Live Activities show the timer without unlocking</div>
+                    <div class="mc-badge">Better</div>
+                </div>
+                <div class="method-card">
+                    <div class="mc-icon">&#9726;</div>
+                    <div class="mc-title">Home Screen widget</div>
+                    <div class="mc-desc">Start and finish feeds without ever opening the app</div>
+                    <div class="mc-badge">Best</div>
+                </div>
+            </div>
 
             <h3>Use a widget, not the app</h3>
 
-            <p>If your breastfeeding app has a Home Screen widget, use it. The fewer taps between you and "timer started," the better. Some apps (like MilkMode) let you do the entire feed from the widget without ever opening the app. That's the gold standard.</p>
+            <p>If your breastfeeding app has a Home Screen widget, use it. The fewer taps between you and "timer started," the better. Some apps (like <a href="https://milkmode.app">MilkMode</a>) let you do the entire feed from the widget without ever opening the app. That's the gold standard.</p>
 
             <h3>Use your Lock Screen</h3>
 
-            <p>Apps with Live Activities put the timer right on your Lock Screen and Dynamic Island. You can see how long the current feed has been going without picking up your phone and unlocking it. When you're holding a baby, that matters more than you'd think.</p>
+            <p>Apps with Live Activities put the timer right on your Lock Screen and Dynamic Island. You can see how long the current feed has been going without picking up your phone and unlocking it. When you're holding a baby, that matters more than you'd think. <a href="https://milkmode.app">MilkMode</a> supports both.</p>
 
             <h3>Let the app remember sides for you</h3>
 
@@ -308,7 +354,7 @@
 
             <h3>Share when needed, not constantly</h3>
 
-            <p>If your pediatrician or lactation consultant wants to see your feeding data, share it before the appointment. You don't need to be exporting reports every day. Most of the time, the data is just there for your own reference.</p>
+            <p>If your pediatrician or lactation consultant wants to see your feeding data, share it before the appointment. <a href="https://milkmode.app">MilkMode</a> makes this easy with shareable feeding summaries. You don't need to be exporting reports every day.</p>
 
             <h2>When to stop tracking</h2>
 
