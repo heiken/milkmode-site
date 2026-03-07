@@ -1,6 +1,18 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/milkmode-site/:path*",
+      "destination": "/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/milkmode-site",
+      "destination": "/",
+      "permanent": true
+    }
+  ],
   "headers": [
     {
       "source": "/(.*)",
