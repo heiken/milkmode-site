@@ -147,7 +147,7 @@
         .hero {
             max-width: 900px;
             margin: 0 auto;
-            padding: 60px 24px 40px;
+            padding: 32px 24px 0;
             text-align: center;
         }
         .hero h1 {
@@ -172,7 +172,7 @@
             font-size: 1em;
             color: #999;
             max-width: 480px;
-            margin: 0 auto 36px;
+            margin: 0 auto 28px;
         }
         .cta-group {
             display: flex;
@@ -226,7 +226,7 @@
         .features {
             max-width: 900px;
             margin: 0 auto;
-            padding: 60px 24px;
+            padding: 40px 24px 32px;
         }
         .features h2 {
             text-align: center;
@@ -237,7 +237,7 @@
         .features .section-sub {
             text-align: center;
             color: #888;
-            margin-bottom: 48px;
+            margin-bottom: 32px;
             font-size: 1.1em;
         }
         .feature-grid {
@@ -248,7 +248,7 @@
         .feature-card {
             background: white;
             border-radius: 16px;
-            padding: 32px 24px;
+            padding: 24px 20px;
             box-shadow: 0 2px 16px rgba(168, 85, 247, 0.08);
             transition: transform 0.2s, box-shadow 0.2s;
         }
@@ -257,8 +257,8 @@
             box-shadow: 0 6px 24px rgba(168, 85, 247, 0.14);
         }
         .feature-icon {
-            font-size: 2em;
-            margin-bottom: 16px;
+            font-size: 1.8em;
+            margin-bottom: 10px;
         }
         .feature-card h3 {
             color: #a855f7;
@@ -274,12 +274,12 @@
         .how-it-works {
             max-width: 900px;
             margin: 0 auto;
-            padding: 60px 24px;
+            padding: 32px 24px;
         }
         .how-it-works h2 {
             text-align: center;
             font-size: 2em;
-            margin-bottom: 48px;
+            margin-bottom: 32px;
             color: #222;
         }
         .steps {
@@ -314,13 +314,13 @@
         .widget-callout {
             max-width: 900px;
             margin: 0 auto;
-            padding: 0 24px 60px;
+            padding: 0 24px 32px;
             text-align: center;
         }
         .widget-callout-box {
             background: linear-gradient(135deg, #a855f7, #ff6b9d);
             border-radius: 20px;
-            padding: 48px 32px;
+            padding: 40px 32px;
             color: white;
         }
         .widget-callout-box h2 {
@@ -339,13 +339,13 @@
         .story {
             max-width: 600px;
             margin: 0 auto;
-            padding: 60px 24px;
+            padding: 32px 24px;
             text-align: center;
         }
         .story-box {
             background: white;
             border-radius: 20px;
-            padding: 40px 32px;
+            padding: 32px 28px;
             box-shadow: 0 4px 24px rgba(168, 85, 247, 0.1);
         }
         .story-box h2 {
@@ -363,7 +363,7 @@
         .faq {
             max-width: 700px;
             margin: 0 auto;
-            padding: 60px 24px;
+            padding: 32px 24px;
         }
         .faq h2 {
             text-align: center;
@@ -399,7 +399,7 @@
         /* Final CTA */
         .final-cta {
             text-align: center;
-            padding: 60px 24px;
+            padding: 32px 24px 40px;
         }
         .final-cta h2 {
             font-size: 2em;
@@ -416,7 +416,7 @@
         .footer {
             max-width: 900px;
             margin: 0 auto;
-            padding: 40px 24px;
+            padding: 24px 24px;
             border-top: 1px solid #e0d0e8;
             display: flex;
             justify-content: space-between;
@@ -435,12 +435,12 @@
 
         /* Hero screenshot */
         .hero-phone {
-            margin-top: 48px;
+            margin-top: 32px;
             display: flex;
             justify-content: center;
         }
         .hero-phone img {
-            max-height: 620px;
+            max-height: 580px;
             width: auto;
             height: auto;
         }
@@ -449,22 +449,25 @@
         .feature-showcase {
             max-width: 900px;
             margin: 0 auto;
-            padding: 0 24px 60px;
+            padding: 20px 24px 32px;
         }
         .showcase-row {
             display: flex;
             align-items: center;
-            gap: 48px;
-            margin-bottom: 60px;
+            gap: 40px;
+            margin-bottom: 40px;
         }
         .showcase-row.reverse {
             flex-direction: row-reverse;
+        }
+        .showcase-row:last-child {
+            margin-bottom: 0;
         }
         .showcase-image {
             flex-shrink: 0;
         }
         .showcase-image img {
-            width: 280px;
+            width: 300px;
             height: auto;
         }
         .showcase-text {
