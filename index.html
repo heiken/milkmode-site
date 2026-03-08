@@ -433,6 +433,74 @@
         .footer a:hover { text-decoration: underline; }
         .footer-links { display: flex; gap: 24px; }
 
+        /* Hero screenshot */
+        .hero-phone {
+            margin-top: 48px;
+            display: flex;
+            justify-content: center;
+        }
+        .hero-phone img {
+            width: 260px;
+            height: auto;
+            border-radius: 28px;
+            box-shadow: 0 16px 50px rgba(0, 0, 0, 0.14);
+        }
+
+        /* Feature showcase rows */
+        .feature-showcase {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 24px 60px;
+        }
+        .showcase-row {
+            display: flex;
+            align-items: center;
+            gap: 48px;
+            margin-bottom: 60px;
+        }
+        .showcase-row.reverse {
+            flex-direction: row-reverse;
+        }
+        .showcase-image {
+            flex-shrink: 0;
+        }
+        .showcase-image img {
+            width: 240px;
+            height: auto;
+            border-radius: 24px;
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
+        }
+        .showcase-text {
+            flex: 1;
+        }
+        .showcase-text h3 {
+            font-size: 1.6em;
+            color: #222;
+            margin-bottom: 12px;
+        }
+        .showcase-text p {
+            color: #666;
+            font-size: 1.05em;
+            line-height: 1.7;
+        }
+
+        /* Widget callout image */
+        .widget-callout-box {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            text-align: left;
+        }
+        .widget-callout-box .widget-text {
+            flex: 1;
+        }
+        .widget-callout-box .widget-image img {
+            width: 220px;
+            height: auto;
+            border-radius: 24px;
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+        }
+
         @media (max-width: 600px) {
             .hero h1 { font-size: 2.2em; }
             .hero .subtitle { font-size: 1.05em; }
@@ -440,6 +508,18 @@
             .steps { grid-template-columns: 1fr; gap: 24px; }
             .footer { flex-direction: column; text-align: center; }
             .nav-links { gap: 16px; }
+            .hero-phone img { width: 200px; border-radius: 20px; }
+            .showcase-row, .showcase-row.reverse {
+                flex-direction: column;
+                text-align: center;
+                gap: 24px;
+            }
+            .showcase-image img { width: 200px; }
+            .widget-callout-box {
+                flex-direction: column;
+                text-align: center;
+            }
+            .widget-callout-box .widget-image img { width: 180px; }
         }
     </style>
 </head>
@@ -469,6 +549,9 @@
             <a href="#features" class="cta-secondary">See Features</a>
         </div>
         <p class="hero-note">Free 7-day trial &middot; One-time purchase &middot; No subscription</p>
+        <div class="hero-phone">
+            <img src="1.png" alt="MilkMode timer with left and right breast buttons, finish and pause controls">
+        </div>
     </section>
 
     <section class="features" id="features">
@@ -508,10 +591,36 @@
         </div>
     </section>
 
+    <section class="feature-showcase">
+        <div class="showcase-row">
+            <div class="showcase-image">
+                <img src="3.png" alt="MilkMode feed history showing a log of all feeding sessions">
+            </div>
+            <div class="showcase-text">
+                <h3>Your feeding history, at a glance</h3>
+                <p>Every session is logged automatically. See when you fed, how long each side lasted, and spot patterns over time. No manual data entry required.</p>
+            </div>
+        </div>
+        <div class="showcase-row reverse">
+            <div class="showcase-image">
+                <img src="2.png" alt="MilkMode settings screen showing baby info and feed schedule">
+            </div>
+            <div class="showcase-text">
+                <h3>Set it up once, forget about it</h3>
+                <p>Add your baby's info, set your feed schedule, and let MilkMode handle the reminders. Sleep mode pauses notifications when everyone is resting.</p>
+            </div>
+        </div>
+    </section>
+
     <section class="widget-callout">
         <div class="widget-callout-box">
-            <h2>Never open the app</h2>
-            <p>Add the MilkMode widget to your Home Screen and log entire feeds without ever launching the app. Tap to start, switch sides, and finish. All from the widget.</p>
+            <div class="widget-text">
+                <h2>Never open the app</h2>
+                <p>Add the MilkMode widget to your Home Screen and log entire feeds without ever launching the app. Tap to start, switch sides, and finish. All from the widget.</p>
+            </div>
+            <div class="widget-image">
+                <img src="6.png" alt="MilkMode Home Screen widget showing left and right breast buttons">
+            </div>
         </div>
     </section>
 
