@@ -44,13 +44,13 @@
             min-height: 100vh;
             color: #333;
         }
-        nav { max-width: 900px; margin: 0 auto; padding: 20px 24px; display: flex; justify-content: space-between; align-items: center; }
+        nav { max-width: 1100px; margin: 0 auto; padding: 20px 24px; display: flex; justify-content: space-between; align-items: center; }
         .nav-brand { font-size: 1.4em; font-weight: 700; background: linear-gradient(90deg, #ff6b9d, #a855f7); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; text-decoration: none; }
         .nav-links { display: flex; gap: 24px; }
         .nav-links a { color: #666; text-decoration: none; font-size: 0.95em; font-weight: 500; transition: color 0.2s; }
         .nav-links a:hover { color: #a855f7; }
 
-        .article { max-width: 680px; margin: 0 auto; padding: 40px 24px 60px; }
+        .article { max-width: 740px; margin: 0 auto; padding: 60px 24px 80px; }
         .article-tag { display: inline-block; font-size: 0.75em; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: #a855f7; background: #f5f0ff; padding: 4px 10px; border-radius: 6px; margin-bottom: 16px; }
         .article h1 { font-size: 2.2em; line-height: 1.2; color: #222; margin-bottom: 12px; }
         .article-meta { color: #aaa; font-size: 0.9em; margin-bottom: 32px; }
@@ -149,12 +149,17 @@
         .back-link { display: inline-block; margin-bottom: 24px; color: #a855f7; text-decoration: none; font-size: 0.9em; font-weight: 500; }
         .back-link:hover { text-decoration: underline; }
 
-        .footer { max-width: 900px; margin: 0 auto; padding: 40px 24px; border-top: 1px solid #e0d0e8; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; font-size: 14px; color: #888; }
+        .footer { max-width: 1100px; margin: 0 auto; padding: 40px 24px; border-top: 1px solid #e0d0e8; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; font-size: 14px; color: #888; }
         .footer a { color: #a855f7; text-decoration: none; }
         .footer a:hover { text-decoration: underline; }
         .footer-links { display: flex; gap: 24px; }
 
+        @media (min-width: 1200px) {
+            .article { padding: 80px 24px 100px; }
+        }
+
         @media (max-width: 600px) {
+            .article { padding: 32px 24px 48px; }
             .article h1 { font-size: 1.7em; }
             .footer { flex-direction: column; text-align: center; }
             .nav-links { gap: 16px; }
