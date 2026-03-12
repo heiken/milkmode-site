@@ -6,7 +6,7 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://milkmode.app/blog/</loc>
+    <loc>https://milkmode.app/blog</loc>
     <lastmod>2026-03-07</lastmod>
     <priority>0.8</priority>
   </url>
@@ -41,17 +41,17 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://milkmode.app/support.html</loc>
+    <loc>https://milkmode.app/support</loc>
     <lastmod>2026-03-07</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://milkmode.app/privacy.html</loc>
+    <loc>https://milkmode.app/privacy</loc>
     <lastmod>2026-03-07</lastmod>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://milkmode.app/terms.html</loc>
+    <loc>https://milkmode.app/terms</loc>
     <lastmod>2026-03-07</lastmod>
     <priority>0.3</priority>
   </url>
